@@ -1,7 +1,9 @@
 function formatMassage(message, maxLength) {
+  // перевірка на макс довжину
   if (message.length <= maxLength) {
     return message;
   } else {
+    // обрізаєм рядок і додаємо ...
     return message.slice(0, maxLength) + '...';
   }
 }
